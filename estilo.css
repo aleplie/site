@@ -127,7 +127,7 @@ column-width: ;
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("kepler.gif");
+  background-image: url("/site/kepler");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
