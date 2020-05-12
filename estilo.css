@@ -1,0 +1,234 @@
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  background-image: url("imagem10.jpg");
+  font-family: sans-serif;
+  color: black;
+  padding: 8px 32px;
+}
+
+img {
+  max-width: 60%;
+  border-radius: 8px;
+
+}
+
+
+
+#titulo {
+  font-size: 48px;
+  background-color: #424242;
+  padding: 48px 26px;
+  border-radius: 8px;
+  background-image: url("imagem1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: orange;
+  text-shadow: 2px 2px 4px black;
+}
+#banner {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("/home/araujo/recomeço/morris.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 100vh;
+  height: 50vh !important;
+  width: 50%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 22px;
+}
+.gridd {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-gap: 22px;
+}
+.card {
+  background-color: #b56d5b;
+  border-radius: 8px;
+  padding: 26px;
+
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #424242;
+  color: white;
+  padding: 16px 32px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #424242;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: green;
+  text-decoration: underline;
+}
+
+.duas-colunas {
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2; /* Firefox */
+column-count: 2;
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+-moz-column-gap: 40px; /* Firefox */
+ column-gap: 40px;
+-webkit-column-rule: 1px solid #cccccc; /* Chrome, Safari, Opera */
+-moz-column-rule: 1px solid #cccccc; /* Firefox */
+column-rule: 1px solid #cccccc;
+ -webkit-column-span: all; /* Chrome, Safari, Opera */
+ column-span: all;
+-webkit-column-width: ;/* Chrome, Safari, Opera */
+-moz-column-width: ;/* Firefox */
+column-width: ;
+}
+#bannersobre {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("/home/araujo/fotografia/img/kepler.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 10vh;
+  height: 10vh !important;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.center-vertical {
+  /* Classe usa flex-box para alinhar o conteúdo verticalmente na caixa que está contido */
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+.main-index {
+  background-image: url("img/john-doe-1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.main-index h2 {
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 22px;
+  text-align: right;
+}
+h2 > a {
+  color: orange;
+  font-size: 28px;
+  text-decoration: none;
+}
+h2 > a:hover {
+  text-decoration: none;
+}
+p > a {
+  color: orange;
+  text-decoration: none;
+}
+p > a:hover {
+  text-decoration: line-through;
+}
+.main-about,
+.main-music {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 22px;
+  padding: 22px;
+  height:50%
+}
+.about-txt p,
+.music-txt p {
+  font-size: 26px;
+}
+
+a {
+  color:black;
+}
+.gridsobre {
+  /* Configuração do Body como uma Grid: */
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.duas-colunas {
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2; /* Firefox */
+column-count: 2;
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+-moz-column-gap: 40px; /* Firefox */
+ column-gap: 40px;
+-webkit-column-rule: 1px solid #cccccc; /* Chrome, Safari, Opera */
+-moz-column-rule: 1px solid #cccccc; /* Firefox */
+column-rule: 1px solid #cccccc;
+ -webkit-column-span: all; /* Chrome, Safari, Opera */
+ column-span: all;
+-webkit-column-width: ;/* Chrome, Safari, Opera */
+-moz-column-width: ;/* Firefox */
+column-width: ;
+}
+
+.cardsobre {
+  background-color:white;
+  border-radius: 8px;
+  padding: 26px;
+
+}

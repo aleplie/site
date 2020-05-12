@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #424242;
+  font-family: 'Oxygen', sans-serif;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.grid {
+  /* Configuração do Body como uma Grid: */
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+main, footer {
+  /* Indico que os elementos main e footer devem começar na primeira linha e terminar na terceira linha, agrupando duas colunas */
+  grid-column: 1 / 3;
+}
+.center-vertical {
+  /* Classe usa flex-box para alinhar o conteúdo verticalmente na caixa que está contido */
+  display: flex;
+  align-items: center;
+}
+h1 {
+  padding: 10px 22px;
+}
+nav a {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+.main-index {
+  background-image: url("img/john-doe-1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.main-index h2 {
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 22px;
+  text-align: right;
+}
+h2 > a {
+  color: orange;
+  font-size: 28px;
+  text-decoration: none;
+}
+h2 > a:hover {
+  text-decoration: none;
+}
+p > a {
+  color: orange;
+  text-decoration: none;
+}
+p > a:hover {
+  text-decoration: line-through;
+}
+.main-about,
+.main-music {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 22px;
+  padding: 22px;
+  height:50%
+}
+.about-txt p,
+.music-txt p {
+  font-size: 26px;
+}
+
+h3{
+  color: black
+  padding: 10px 22px;
+
+}
+footer {
+  border-top: 1px solid #ccc;
+  padding: 22px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #424242;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #424242;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: black;
+  text-decoration: underline;
+}
+
+#banner1 {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("/home/araujo/fotografia/img/kepler.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 100vh;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+#bannerextrair {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("/home/araujo/fotografia/img/transito.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 50vh;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+#bannersobre {
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("/home/araujo/fotografia/img/kepler.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 0;
+  min-height: 10vh;
+  height: 10vh !important;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.duas-colunas {
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2; /* Firefox */
+column-count: 2;
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+-moz-column-gap: 40px; /* Firefox */
+ column-gap: 40px;
+-webkit-column-rule: 1px solid #cccccc; /* Chrome, Safari, Opera */
+-moz-column-rule: 1px solid #cccccc; /* Firefox */
+column-rule: 1px solid #cccccc;
+ -webkit-column-span: all; /* Chrome, Safari, Opera */
+ column-span: all;
+-webkit-column-width: ;/* Chrome, Safari, Opera */
+-moz-column-width: ;/* Firefox */
+column-width: ;
+}
+.gridd {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px;
+}
+
+.griddd {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+}
+
+.card {
+  background-color:white;
+  border-radius: 8px;
+  padding: 26px;
+
+}
+
+.cardd {
+  background-color:black;
+  border-radius: 8px;
+  padding: 46px;
+
+}
+
+.wrapper.style3 {
+  background-color: #000;
+  color: #bfbfbf;
+  background-image: url(/home/araujo/fotografia/img/imagem10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+#banner .inner {
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+
+h3 {font-size: 1.35rem;
+text-transform: uppercase;
+}
+
+
+.logo {
+			display: inline-block;
+			height: inherit;
+			left: 1.25rem;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+		}
+
+			#header > .logo a {
+				font-size: 1.25rem;
+				color: #FFF;
+				text-decoration: none;
+			}
+
+			#header > .logo span {
+				font-weight: 300;
+				font-size: .75rem;
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+      #titulo {
+      font-size: 48px;
+      background-color: #424242;
+      padding: 48px 26px;
+      border-radius: 8px;
+      background-image: url("img/imagem-4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
