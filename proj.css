@@ -233,6 +233,12 @@ column-width: ;
   padding: 26px;
 
 }
+.cardhome {
+  background-color: white;
+  border-radius: 8px;
+  padding: 26px;
+
+}
 
 .cardd {
   background-color:black;
